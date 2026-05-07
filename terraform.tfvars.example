@@ -1,0 +1,38 @@
+# ============================================================
+# terraform/terraform.tfvars.example
+# 複製成 terraform.tfvars 並填入實際值（不要 commit 進 git！）
+# ============================================================
+
+aws_region   = "ap-northeast-1"
+project_name = "gitops"
+environment  = "production"
+
+# EKS Node
+node_instance_type = "m5.large"
+node_desired_size  = 3
+node_min_size      = 2
+node_max_size      = 6
+
+# 域名（改成你的實際域名）
+harbor_domain  = "harbor.yourdomain.com"
+argocd_domain  = "argocd.yourdomain.com"
+kuboard_domain = "kuboard.yourdomain.com"
+kibana_domain  = "kibana.yourdomain.com"
+grafana_domain = "grafana.yourdomain.com"
+jenkins_domain = "jenkins.yourdomain.com"
+
+# GitLab
+gitlab_base_url = "https://gitlab.yourdomain.com"
+gitlab_repo_url = "git@gitlab.yourdomain.com:gitops/config-repo.git"
+
+# Secrets（填入真實值）
+harbor_admin_password        = "your-harbor-password"
+jenkins_admin_user           = "admin"
+jenkins_admin_password       = "your-jenkins-password"
+jenkins_storage_size         = "20Gi"
+gitlab_kuboard_app_id        = "your-kuboard-gitlab-app-id"
+gitlab_kuboard_secret        = "your-kuboard-gitlab-secret"
+gitlab_grafana_client_id     = "your-grafana-gitlab-client-id"
+gitlab_grafana_client_secret = "your-grafana-gitlab-client-secret"
+alertmanager_email           = "devops@yourdomain.com"
+slack_webhook_url            = "https://hooks.slack.com/services/YOUR/WEBHOOK"
