@@ -1,3 +1,5 @@
+web:https://viruskingkk.github.io/terraform-gen/
+
 # Terraform Infrastructure Generator — README
 
 > 搭配 **`index.html`** 視覺化產生器使用：在瀏覽器開啟 `index.html`，填入參數、勾選元件，點擊「產生完整 Terraform 設定」後即可複製所有 `.tf` 檔案內容，貼回本目錄直接部署。
